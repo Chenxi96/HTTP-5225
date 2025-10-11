@@ -16,7 +16,7 @@
             $id = $_GET['id'];
             $query = "DELETE FROM schools WHERE id = " . $id;
             if(mysqli_query($connect, $query)) {
-                echo 'School has been deleted';
+                header('Location: index.php');
             } else {
                 echo 'Did not work try again!';
             }
