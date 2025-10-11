@@ -7,13 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Edit School</h1>
     <hr>
     <div>
         <?php include('nav.php'); ?>
     </div>
     <hr>
+    <h1 class="text-center">Update School</h1>
     <div class="d-flex justify-content-center">
+        
         <!-- boardName=Test
             &schoolName=Test
             &schoolNumber=112212
@@ -128,25 +129,25 @@
                 $schoolBoardWebsite = $_POST['board-website'];
 
                 $query = "UPDATE schools
-                            SET `Board Name` = '$boardName',
-                                `School Number` = '$schoolNumber',
-                                `School Name` = '$schoolName',
-                                `School Level` = '$schoolLevel',
-                                `School Language` = '$schoolLanguage',
-                                `School Type` = '$schoolType',
-                                `School Special Conditions` = '$schoolConditions',
-                                `Street` = '$schoolStreet',
-                                `City` = '$schoolCity',
-                                `Province` = '$schoolProvince',
-                                `Postal Code` = '$schoolPostalCode',
-                                `Phone` = '$schoolPhone',
-                                `Fax` = '$schoolFax',
-                                `Grade Range` = '$schoolGradeRange',
-                                `Date Open` = '$schoolDateOpen',
-                                `Email` = '$schoolEmail',
-                                `Website` = '$schoolWebsite',
-                                `Board Website` = '$schoolBoardWebsite'
-                            WHERE `id` = $id";
+                        SET `Board Name` = '$boardName',
+                            `School Number` = '$schoolNumber',
+                            `School Name` = '$schoolName',
+                            `School Level` = '$schoolLevel',
+                            `School Language` = '$schoolLanguage',
+                            `School Type` = '$schoolType',
+                            `School Special Conditions` = '$schoolConditions',
+                            `Street` = '$schoolStreet',
+                            `City` = '$schoolCity',
+                            `Province` = '$schoolProvince',
+                            `Postal Code` = '$schoolPostalCode',
+                            `Phone` = '$schoolPhone',
+                            `Fax` = '$schoolFax',
+                            `Grade Range` = '$schoolGradeRange',
+                            `Date Open` = '$schoolDateOpen',
+                            `Email` = '$schoolEmail',
+                            `Website` = '$schoolWebsite',
+                            `Board Website` = '$schoolBoardWebsite'
+                        WHERE `id` = $id";
                 $school = mysqli_query($connect, $query);
                 if($school) {
                     // Success

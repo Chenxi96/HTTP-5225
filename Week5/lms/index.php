@@ -14,7 +14,7 @@
     </div>
     
     <hr>
-    <h1>Schools</h1>
+    <h1 class="text-center">Schools</h1>
     <div class="d-flex flex-wrap gap-2 m-2">
         <?php
             require('connect.php');
@@ -27,22 +27,22 @@
                         '<div class="card-body">' .
                             '<h2 class="card-title">'. $school["School Name"] .'</h5>' .
                             '<h3 class="card-subtitle mb-2 text-body-secondary">' . $school["School Type"] . '</h6>' .
-                            '<p class="card-text">' . $school["Board Name"] . '</p>' .
-                            '<p class="card-text">' . $school["School Number"] . '</p>' .
-                            '<p class="card-text">' . $school["School Level"] . '</p>' .
-                            '<p class="card-text">' . $school["School Language"] . '</p>' .
-                            '<p class="card-text">' . $school["School Special Conditions"] . '</p>' .
-                            '<p class="card-text">' . $school["Street"] . '</p>' .
-                            '<p class="card-text">' . $school["City"] . '</p>' .
-                            '<p class="card-text">' . $school["Province"] . '</p>' .
-                            '<p class="card-text">' . $school["Postal Code"] . '</p>' .
-                            '<p class="card-text">' . $school["Phone"] . '</p>' .
-                            '<p class="card-text">' . $school["Fax"] . '</p>' .
-                            '<p class="card-text">' . $school["Grade Range"] . '</p>' .
-                            '<p class="card-text">' . $school["Date Open"] . '</p>' .
-                            '<p class="card-text">' . $school["Email"] . '</p>' .
-                            '<p class="card-text">' . $school["Website"] . '</p>' .
-                            '<p class="card-text">' . $school["Board Website"] . '</p>' .
+                            '<p class="card-text">Board Name: ' . $school["Board Name"] . '</p>' .
+                            '<p class="card-text">School Number: ' . $school["School Number"] . '</p>' .
+                            '<p class="card-text">School Level:' . $school["School Level"] . '</p>' .
+                            '<p class="card-text">School Language: ' . $school["School Language"] . '</p>' .
+                            '<p class="card-text">School Special Conditions:' . $school["School Special Conditions"] . '</p>' .
+                            '<p class="card-text">Street: ' . $school["Street"] . '</p>' .
+                            '<p class="card-text">City: ' . $school["City"] . '</p>' .
+                            '<p class="card-text">Province: ' . $school["Province"] . '</p>' .
+                            '<p class="card-text">Postal Code: ' . $school["Postal Code"] . '</p>' .
+                            '<p class="card-text">Phone Number: ' . $school["Phone"] . '</p>' .
+                            '<p class="card-text">Fax Number: ' . $school["Fax"] . '</p>' .
+                            '<p class="card-text">Grade Range: ' . $school["Grade Range"] . '</p>' .
+                            '<p class="card-text">Date Open: ' . $school["Date Open"] . '</p>' .
+                            '<p class="card-text">Email: ' . $school["Email"] . '</p>' .
+                            '<p class="card-text">Website: ' . $school["Website"] . '</p>' .
+                            '<p class="card-text">Board Website: ' . $school["Board Website"] . '</p>' .
                             '<form action="editschool.php">' .
                                 '<input type="hidden" name="id" value=' . $school["id"] . '>' .
                                 '<input type="submit" value="Update">' .
