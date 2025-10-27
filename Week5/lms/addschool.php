@@ -1,3 +1,8 @@
+<?php
+    require('profiles/loginFunction.php');
+    secure();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

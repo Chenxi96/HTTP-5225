@@ -9,7 +9,7 @@
 <body>
     <div>
         <div>
-            <?php include('nav.php'); ?>
+            <?php include('reusable/nav.php'); ?>
         </div>
     </div>
     
