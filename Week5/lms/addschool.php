@@ -14,7 +14,7 @@
 <body>
     <hr>
     <div>
-        <?php include('nav.php'); ?>
+        <?php include('reusable/nav.php'); ?>
     </div>
     <hr>
     <h1 class="text-center">Add School</h1>

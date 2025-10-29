@@ -20,7 +20,6 @@
             require('connect.php');
             $query = 'SELECT * FROM schools';
             $schools = mysqli_query($connect, $query);
-
             // echo '<pre>' . print_r($schools) . '</pre>';
             foreach($schools as $school) {
                 echo '<div class="card d-flex flex-wrap" style="width: 18rem;">' .
